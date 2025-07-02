@@ -5,13 +5,13 @@
   "type": "module",
   "homepage": "https://Aniruddh-482.github.io/Name-Card",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "vite",
+    "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "astro preview",
+    "preview": "vite preview",
     "vercel-build": "npm run build"
   },
   "dependencies": {
