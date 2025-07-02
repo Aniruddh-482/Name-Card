@@ -5,19 +5,19 @@ import { Github, Twitter, Linkedin } from 'lucide-react';
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/aniruddh-upadhyay',
+    url: 'https://github.com/Aniruddh-482',
     icon: Github,
     color: '#ffffff'
   },
   {
     name: 'Twitter', 
-    url: 'https://twitter.com/aniruddh_dev',
+    url: 'https://x.com/Aniruddh_482',
     icon: Twitter,
     color: '#1da1f2'
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/aniruddh-upadhyay',
+    url: 'https://www.linkedin.com/in/aniruddh-upadhyay-0170a51b2/',
     icon: Linkedin,
     color: '#0077b5'
   }

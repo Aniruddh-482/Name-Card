@@ -14,8 +14,8 @@ const NameCard: React.FC = () => {
   const [isRocketLaunched, setIsRocketLaunched] = useState(false);
 
   const typewriterTexts = [
-    "Astro & React Lover",
-    "Retro-Arcade Game Maker", 
+    "Python & DSA Lover",
+    "Good Chess Player", 
     "Open-Source Enthusiast",
     "Full-Stack Developer"
   ];
@@ -56,14 +56,14 @@ const NameCard: React.FC = () => {
                 {/* Avatar */}
                 <div className="flex justify-center lg:justify-start">
                   <div className="relative">
-                    <div className="w-32 h-32 rounded-full border-4 border-cosmic-purple animate-pulse-neon overflow-hidden">
+                    <div className="w-36 h-36 rounded-full border-4 border-cosmic-purple overflow-hidden">
                       <img
-                        src="/aniruddh.png"
+                        src="public/aniruddh.png"
                         alt="Aniruddh Upadhyay"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-cosmic-purple to-cosmic-cyan opacity-30 blur animate-pulse"></div>
+                    {/* <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-cosmic-purple to-cosmic-cyan opacity-30 blur animate-pulse"></div> */}
                   </div>
                 </div>
 
@@ -73,7 +73,7 @@ const NameCard: React.FC = () => {
                     Aniruddh Upadhyay
                   </h1>
                   <p className="text-lg text-gray-300">
-                    Full-Stack Developer & Game Creator
+                    Full-Stack Developer
                   </p>
                   <div className="text-base h-8">
                     <Typewriter texts={typewriterTexts} />
@@ -86,7 +86,7 @@ const NameCard: React.FC = () => {
                     asChild
                     className="rounded-full px-6 py-2 bg-gradient-to-r from-cosmic-purple to-cosmic-pink hover:from-cosmic-purple/80 hover:to-cosmic-pink/80 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cosmic-purple/50"
                   >
-                    <a href="/assets/Aniruddh_Upadhyay_Resume.pdf" target="_blank">
+                    <a href="public/Aniruddh_Upadhyay_Resume.pdf" target="_blank">
                       Download Resume
                     </a>
                   </Button>
@@ -124,11 +124,11 @@ const NameCard: React.FC = () => {
                   <h3 className="text-lg font-medium text-white mb-3">GitHub Activity</h3>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-cosmic-cyan">150+</div>
+                      <div className="text-2xl font-bold text-cosmic-cyan">120+</div>
                       <div className="text-sm text-gray-400">Commits</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-cosmic-purple">25+</div>
+                      <div className="text-2xl font-bold text-cosmic-purple">8</div>
                       <div className="text-sm text-gray-400">Projects</div>
                     </div>
                   </div>

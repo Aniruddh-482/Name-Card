@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 
 interface Skill {
@@ -9,12 +8,15 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'JavaScript', level: 90, icon: '🟨', color: '#f7df1e' },
-  { name: 'TypeScript', level: 85, icon: '🔷', color: '#3178c6' },
-  { name: 'React', level: 88, icon: '⚛️', color: '#61dafb' },
-  { name: 'Astro', level: 80, icon: '🚀', color: '#ff5d01' },
-  { name: 'Node.js', level: 82, icon: '🟢', color: '#339933' },
-  { name: 'Tailwind', level: 90, icon: '🎨', color: '#06b6d4' }
+  { name: 'JavaScript', level: 90, icon: 'public/icons/javascript.png', color: '#f7df1e' },
+  { name: 'TypeScript', level: 80, icon: 'public/icons/typescript.png', color: '#3178c6' },
+  { name: 'React', level: 80, icon: 'public/icons/react.png', color: '#61dafb' },
+  { name: 'Next', level: 55, icon: 'public/icons/nextjs.png', color: '#000000' },
+  { name: 'Node.js', level: 65, icon: 'public/icons/nodejs.png', color: '#339933' },
+  { name: 'Tailwind', level: 60, icon: 'public/icons/tailwind.png', color: '#06b6d4' },
+  { name: 'Python', level: 90, icon: 'public/icons/python.png', color: '#117799' },
+  { name: 'MySQL', level: 65, icon: 'public/icons/mysql.png', color: '#ff5d01' },
+  { name: 'Ubuntu', level: 40, icon: 'public/icons/ubuntu.png', color: '#ff4522' }
 ];
 
 const SkillsBar: React.FC = () => {
@@ -56,7 +58,8 @@ const SkillsBar: React.FC = () => {
           <div key={skill.name} className="space-y-2">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <span className="text-lg">{skill.icon}</span>
+                {/* Render the icon as an <img> tag */}
+                <img src={skill.icon} alt={skill.name} className="w-6 h-6" />
                 <span className="text-sm font-medium text-gray-300">{skill.name}</span>
               </div>
               <span className="text-xs text-cosmic-cyan">{skill.level}%</span>
